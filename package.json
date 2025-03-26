@@ -1,0 +1,19 @@
+{
+  "name": "piyushreactjs",
+  "version": "1.0.0",
+  "description": "react js course",
+  "main": "App.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PiyushSol/namaste-react-codes.git"
+  },
+  "author": "Piyush Solanki",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PiyushSol/namaste-react-codes/issues"
+  },
+  "homepage": "https://github.com/PiyushSol/namaste-react-codes#readme"
+}
