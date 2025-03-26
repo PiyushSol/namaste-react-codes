@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/PiyushSol/namaste-react-codes/issues"
   },
-  "homepage": "https://github.com/PiyushSol/namaste-react-codes#readme"
+  "homepage": "https://github.com/PiyushSol/namaste-react-codes#readme",
+  "devDependencies": {
+    "parcel": "^2.14.2"
+  }
 }
