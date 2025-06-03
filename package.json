@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "react js course",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "start": "parcel index.html",
+    "build": "parcel build index.html"
   },
   "repository": {
     "type": "git",
@@ -16,13 +18,15 @@
   },
   "homepage": "https://github.com/PiyushSol/namaste-react-codes#readme",
   "devDependencies": {
+    "@babel/core": "^7.27.4",
+    "babel-plugin-transform-remove-console": "^6.9.4",
     "parcel": "^2.14.2"
   },
   "dependencies": {
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
   },
-  "browserslist":[
+  "browserslist": [
     "last 2 versions"
   ]
 }
