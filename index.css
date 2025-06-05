@@ -1,3 +1,39 @@
-#container{
-    background-color: yellowgreen;
+.header{
+    display: flex;
+    justify-content:space-between ;
+    margin: 10px;
+    border: 1px solid red;
+}
+
+.nav-items > ul{
+    list-style: none;
+    display: flex;  
+}
+
+.nav-items > ul >li{
+    padding:10px;
+}
+
+.title-logo{
+   max-height: 100px;
+   max-width: 150px;
+   padding-left:10px ;
+}
+
+.card{
+  width: 180px;   
+  border: 1px solid black;
+  padding: 10px;
+  margin: 10px;
+}
+
+.card > img{
+    width: 100%;
+
+}
+
+.restraunt-list{
+   display: flex;
+   flex-wrap: wrap;
+   align-items: center;
 }
