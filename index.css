@@ -46,3 +46,18 @@
     align-items: center;
     background: orangered;
 }
+
+
+.menu{
+    margin: auto;
+    padding: auto;
+    border: 1px solid;
+    width: 200px;
+    align-items: center;
+    text-align: center;
+}
+
+.menu>img{
+    height: fit-content;
+    width: 150px;
+}

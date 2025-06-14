@@ -1,4 +1,6 @@
 import { useState } from "react";
+import Logo from "../assets/img/foodvilla.jpg"
+import { Link } from "react-router";
 
 const loggedInUser=()=>{
     //Suppose we make api call to authenticate the user
@@ -9,7 +11,7 @@ export const Title =() => (
 <a href="/"><img className="title-logo" src="https://a.mktgcdn.com/p/HVoJy7Sqyw_sopyJMvKklguS-vlAj9LiXbF3glb7xeY/400x400.jpg" alt="App logo" />
 </a>
  );
-
+ 
 
  //Component
 //Functional component
@@ -19,9 +21,9 @@ const Header = ()=> {
     <Title/>
     <div className="nav-items">
         <ul>
-            <li>Home</li>
-            <li>About</li>
-            <li>Contact</li>
+           <li><Link to="/">Home</Link></li>
+            <li><Link to="/about">About</Link></li>
+            <li><Link to="/contact">Contact</Link></li>
             <li>Cart</li>
         </ul>
     </div>

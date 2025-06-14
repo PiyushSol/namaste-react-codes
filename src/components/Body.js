@@ -2,6 +2,7 @@ import { useState , useEffect } from "react";
 import { restrauntList } from "../config.js";
 import RestrauntCard from "./RestrauntCard";
 import Shimmer from "./Shimmer.js";
+import { Link } from "react-router";
 
 //filterData method
 function filterData(searchInput,restraunts){
@@ -19,7 +20,7 @@ const Body = ()=>{
 
     //function call to make call to api
     async function getRestraunts() {
-      const data = await fetch("https://www.swiggy.com/dapi/restaurants/list/v5?lat=21.99740&lng=79.00110&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING"); 
+      const data = await fetch("https://www.swiggy.com/dapi/restaurants/list/v5?lat=28.6126255&lng=77.04108959999999&page_type=DESKTOP_WEB_LISTING"); 
       const json = await data.json();
       setAllRestraunts(json?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle?.restaurants)
       setFilteredRestraunts(json?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle?.restaurants)
@@ -42,7 +43,7 @@ const Body = ()=>{
      <div className="restraunt-list">
       {    
         filteredrestraunts.map((restraunt)=>{
-            return <RestrauntCard {...restraunt.info} key={restraunt.info.id} />
+            return(<Link to={"/restraunt/"+restraunt.info.id} key={restraunt.info.id}><RestrauntCard {...restraunt.info}  /> </Link>)
         })
       }
      </div>

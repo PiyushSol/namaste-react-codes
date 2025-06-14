@@ -3,7 +3,12 @@ import { ShimmerPostItem } from "react-shimmer-effects";
 const Shimmer = ()=>{
      return (
       <>
-        <ShimmerPostItem card title cta />
+      {/* {
+        Array(10).fill("").map((e)=>(
+         <ShimmerPostItem className="shimmer-card "card title cta />
+        ))
+      } */}
+               <ShimmerPostItem className="shimmer-card "card title cta />
       </>
     );
 }
